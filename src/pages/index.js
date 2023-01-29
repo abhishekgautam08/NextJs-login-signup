@@ -1,18 +1,7 @@
-import { getCurrentUser } from "@/apis/auth";
-import Link from "next/link";
+import withAuth from "@/hocs/withAuth";
 
-export default function Home() {
-  const currentUser = getCurrentUser();
-
-  return (
-    <div className="Home">
-      {currentUser ? (
-        `Welcome ${currentUser.email}`
-      ) : (
-        <div className="">
-          <Link href="/login">Please sign in to Continue</Link>
-        </div>
-      )}
-    </div>
-  );
+function Home({ currentUser }) {
+  return <div className="Home">Welcome {currentUser.email}</div>;
 }
+
+export default withAuth(Home);

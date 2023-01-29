@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import BgImg from "../../public/image-1.jpg";
-import { loginUser } from "@/apis/auth";
+import { getCurrentUser, loginUser } from "@/apis/auth";
 import { useRouter } from "next/router";
 import Link from "next/link";
 
