@@ -33,7 +33,6 @@ const LoginContainer = () => {
           <div
             // className="col-md-6 d-none d-md-block"
             className="col d-none d-sm-block"
-            // style={{ backgroundColor: "red" }}
           >
             <Image
               src={BgImg}

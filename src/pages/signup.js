@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import SignupContainer from "@/containers/Signup";
 import { useRouter } from "next/router";
 import { getCurrentUser } from "@/apis/auth";
